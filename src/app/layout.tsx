@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import { SITE } from '@/lib/content'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://earney.in'),
+  metadataBase: new URL(SITE.url),
   title: {
     default: 'Earney — AI Automation, Apps & Digital Growth Systems',
     template: '%s | Earney',
@@ -40,12 +41,15 @@ export const metadata: Metadata = {
     'Chennai',
     'India',
   ],
-  authors: [{ name: 'Earney', url: 'https://earney.in' }],
+  authors: [{ name: 'Earney', url: SITE.url }],
   creator: 'Earney',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://earney.in',
+    url: SITE.url,
     siteName: 'Earney',
     title: 'Earney — AI Automation, Apps & Digital Growth Systems',
     description:

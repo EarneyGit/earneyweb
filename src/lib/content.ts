@@ -14,7 +14,7 @@ export const SITE = {
   phoneRaw: '9941875131',
   email: 'hello@earney.in',
   address: 'Kolapakkam, Chennai, India',
-  url: 'https://earney.in',
+  url: 'https://www.earney.in',
   portfolioUrl: 'https://portfolio.earney.in/',
   copyright: `© ${new Date().getFullYear()} Earney. All Rights Reserved.`,
 } as const
