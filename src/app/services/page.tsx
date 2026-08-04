@@ -28,11 +28,14 @@ export const metadata: Metadata = {
   title: 'Services | Earney',
   description:
     'Earney offers AI agents & automation, website development, app development, software engineering, digital marketing, reels & content production, AI SEO, and no-code automation — all under one roof for ambitious businesses.',
+  alternates: {
+    canonical: '/services',
+  },
   openGraph: {
     title: 'Services | Earney',
     description:
       'From AI automation to reels — every service Earney offers is designed to help your business grow faster in the AI era.',
-    url: 'https://earney.in/services',
+    url: `${SITE.url}/services`,
   },
 }
 
