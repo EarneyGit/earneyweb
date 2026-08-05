@@ -10,8 +10,8 @@ export const SITE = {
   title: 'Earney — AI Automation, Apps & Digital Growth Systems',
   description:
     'Earney builds AI agents, automations, modern websites, apps, software, reels, and digital growth systems for ambitious businesses in Chennai and beyond.',
-  phone: '+91 99418 75131',
-  phoneRaw: '9941875131',
+  phone: '+91 63814 93324',
+  phoneRaw: '6381493324',
   email: 'hello@earney.in',
   address: 'Kolapakkam, Chennai, India',
   url: 'https://www.earney.in',
