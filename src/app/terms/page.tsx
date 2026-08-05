@@ -43,7 +43,7 @@ export default function TermsPage() {
                 { title: '4. Services', body: 'Earney provides AI automation and development services as described on our website. The specific terms of any services engagement will be governed by separate agreements between Earney and the client.' },
                 { title: '5. Limitation of Liability', body: 'To the fullest extent permitted by law, Earney shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the website.' },
                 { title: '6. Changes to Terms', body: 'We reserve the right to modify these Terms of Use at any time. Changes will be effective immediately upon posting to the website. Your continued use of the website constitutes acceptance of the revised terms.' },
-                { title: '7. Contact', body: 'If you have any questions about these Terms of Use, please contact us at hello@earney.in or call +91 99418 75131.' },
+                { title: '7. Contact', body: 'If you have any questions about these Terms of Use, please contact us at hello@earney.in or call +91 63814 93324.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex flex-col gap-3 pb-6 border-b border-border last:border-0">
                   <h2 className="text-base font-semibold text-foreground" style={{ fontFamily: 'var(--font-space-grotesk)' }}>{title}</h2>

@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
                 { title: '4. Cookies', body: 'Our website may use cookies and similar tracking technologies to enhance your experience. You can control cookie settings through your browser preferences.' },
                 { title: '5. Third-Party Services', body: 'We may use third-party services such as analytics providers. These providers have their own privacy policies governing the use of your information.' },
                 { title: '6. Your Rights', body: 'You have the right to access, correct, or request deletion of your personal data, subject to applicable law. To exercise these rights, please contact us at hello@earney.in.' },
-                { title: '7. Contact Us', body: 'For any privacy-related questions or concerns, please contact us at hello@earney.in or call +91 99418 75131.' },
+                { title: '7. Contact Us', body: 'For any privacy-related questions or concerns, please contact us at hello@earney.in or call +91 63814 93324.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex flex-col gap-3 pb-6 border-b border-border last:border-0">
                   <h2 className="text-base font-semibold text-foreground" style={{ fontFamily: 'var(--font-space-grotesk)' }}>{title}</h2>
