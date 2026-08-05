@@ -3,6 +3,57 @@ import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { SITE } from '@/lib/content'
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      email: SITE.email,
+      telephone: SITE.phone,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Chennai',
+        addressCountry: 'IN',
+      },
+      sameAs: [
+        'https://www.facebook.com/earneysolutions/',
+        'https://in.linkedin.com/company/earney',
+        'https://www.instagram.com/earneysolutions/?hl=en',
+        'https://x.com/DigitalEar37032',
+      ],
+      knowsAbout: [
+        'AI automation',
+        'AI agents',
+        'Website development',
+        'App development',
+        'Software development',
+        'Digital marketing',
+        'SEO',
+        'AEO',
+        'GEO',
+      ],
+      areaServed: {
+        '@type': 'City',
+        name: 'Chennai',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      description: SITE.description,
+      publisher: {
+        '@id': `${SITE.url}/#organization`,
+      },
+      inLanguage: 'en-IN',
+    },
+  ],
+}
+
 const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -79,6 +130,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased bg-[#0A0A0A] text-white`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <div className="min-h-screen">{children}</div>
       </body>
     </html>

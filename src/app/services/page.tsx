@@ -28,6 +28,15 @@ export const metadata: Metadata = {
   title: 'Services | Earney',
   description:
     'Earney offers AI agents & automation, website development, app development, software engineering, digital marketing, reels & content production, AI SEO, and no-code automation — all under one roof for ambitious businesses.',
+  keywords: [
+    'AI automation Chennai',
+    'AI agents Chennai',
+    'website development Chennai',
+    'app development Chennai',
+    'software development Chennai',
+    'digital marketing Chennai',
+    'SEO AEO GEO Chennai',
+  ],
   alternates: {
     canonical: '/services',
   },
@@ -85,10 +94,64 @@ const FAQS = [
   },
 ]
 
+const servicesSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${SITE.url}/services#service-catalog`,
+      name: 'Earney Service Stack',
+      serviceType: 'AI automation, app development, software, and digital growth services',
+      provider: {
+        '@type': 'Organization',
+        '@id': `${SITE.url}/#organization`,
+        name: 'Earney',
+        url: SITE.url,
+      },
+      areaServed: {
+        '@type': 'City',
+        name: 'Chennai',
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Earney Services',
+        itemListElement: SERVICES.map((svc) => ({
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: svc.name,
+            description: svc.shortDesc,
+            areaServed: {
+              '@type': 'City',
+              name: 'Chennai',
+            },
+          },
+        })),
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE.url}/services#faq`,
+      mainEntity: FAQS.map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.a,
+        },
+      })),
+    },
+  ],
+}
+
 // ─── Page Component ───────────────────────────────────────────────────────────
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       <Navbar />
 
       {/* ════════════════════════════════════════════
