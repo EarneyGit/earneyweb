@@ -3,6 +3,7 @@ import { SITE } from '@/lib/content'
 
 const PUBLIC_ROUTES = [
   '',
+  '/ai-automation-chennai',
   '/about',
   '/blogs',
   '/contact',

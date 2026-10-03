@@ -6,7 +6,6 @@ import { ExpertiseBento } from '@/components/home/ExpertiseBento'
 import { AIAgentsSection } from '@/components/home/AIAgentsSection'
 import { StoryTimeline } from '@/components/home/StoryTimeline'
 import { TechStack } from '@/components/home/TechStack'
-import { Testimonials } from '@/components/home/Testimonials'
 import { ContactCTA } from '@/components/home/ContactCTA'
 
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ export default function HomePage() {
         <AIAgentsSection />
         <StoryTimeline />
         <TechStack />
-        <Testimonials />
+
         <ContactCTA />
       </main>
       <Footer />

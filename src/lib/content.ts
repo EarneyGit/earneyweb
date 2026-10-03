@@ -222,27 +222,6 @@ export const PARTNER_LOGOS = [
   { name: 'Chili', src: '/recovered-assets/local-chili.webp' },
 ] as const
 
-// ── Testimonials (recovered + safe generic) ──
-export const TESTIMONIALS = [
-  {
-    id: 'TST.01',
-    quote: '"Earney completely overhauled our lead-gen pipeline. They built an AI agent that qualifies leads 24/7 and books them straight into our calendar. Our close rate jumped by 40% in just two months. Unbelievable ROI."',
-    author: 'Karthik Subramaniam',
-    company: 'Director of Growth, Chennai Retail',
-  },
-  {
-    id: 'TST.02',
-    quote: '"The new web application they designed and built for us is stunning. Not only does it look incredibly premium with the dark aesthetic we asked for, but it loads instantly. The team is hyper-responsive and actually cares about the details."',
-    author: 'Priya Rajan',
-    company: 'Founder, Nexus SaaS Chennai',
-  },
-  {
-    id: 'TST.03',
-    quote: '"Their content production is on another level. The reels they shot and edited for our ad campaigns consistently beat our own internal creatives in CTR and ROAS. If you want top-tier modern marketing, Earney is the team to hire."',
-    author: 'Arun Kumar',
-    company: 'Marketing Head, Elevate Lifestyle Adyar',
-  },
-] as const
 
 // ── Blog posts (recovered from Wayback earney.in/blogs/ April 2025) ──
 export const BLOG_POSTS = [
