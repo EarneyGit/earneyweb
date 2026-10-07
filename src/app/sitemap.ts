@@ -6,6 +6,7 @@ const PUBLIC_ROUTES = [
   '/about',
   '/blogs',
   '/contact',
+  '/chennai-ai-automation',
   '/services',
   '/privacy-policy',
   '/terms',
